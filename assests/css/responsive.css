@@ -1,0 +1,160 @@
+@media (max-width: 600px) {
+    .fontsize {
+        font-size: 2.2rem;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .imgset {
+        width: 100%;
+
+    }
+
+    .font {
+        font-size: 0.8rem;
+    }
+
+    .main-logotext-content {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .mainimgtext img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #top {
+        display: none;
+    }
+
+    #lines {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        margin-top: 0.2rem;
+    }
+
+    .sixbox {
+        width: 100%;
+        height: 8rem;
+        padding: 2em 1em;
+
+    }
+
+    .sixbox-down {
+        margin-bottom: 1.2rem;
+    }
+
+    .boxstyle {
+        background-color: white;
+
+    }
+   .textcolor {
+       font-size: 0.7rem;
+       color: #000;
+       font-weight: 300;
+   }
+
+   .sixbox {
+       text-align: center;
+   }
+
+   .img-girl {
+       position: relative;
+       top: 10rem;
+   }
+
+   .box-space {
+       margin-top: 0rem;
+   }
+
+   .center-text {
+       text-align: center;
+   }
+
+   .img-girl {
+       display: none;
+   }
+
+   .heading h1 {
+       font-size: 1.6rem;
+       margin-top: 2rem;
+   }
+
+   .pd {
+       padding-top: 1rem;
+   }
+
+   .sixbox-colored {
+       padding: 4rem 1.4rem;
+   }
+
+   .sixbox-colored h3 {
+       font-size: 2rem;
+   }
+
+   .sixbox-down p {
+       font-size: 0.8rem;
+       line-height: 1.3rem;
+   }
+
+   .hideline {
+       display: block;
+       opacity: 0.7;
+   }
+
+   .boxstyle p {
+       padding: 0rem;
+   }
+
+   .boxstyle {
+       padding: 1rem 1rem;
+   }
+   .boxstyle {
+       width: 100%;
+   }
+
+   .oddcolor {
+       background-color: #ffe6ca5a;
+   }
+
+   .evencolor {
+       background-color: #dedede80;
+   }
+}
+
+@media only screen and (max-width: 992px){
+    .textNav span{
+      font-size: 21px;
+    }
+    .ulset li a, .supprtnum{
+      font-size: 13px;
+  
+    }
+    .ulset{
+      display: grid !important;
+      padding: 0px;
+      line-height: 1.2rem;
+      font-size: 13px;
+    }
+    .navbtn{
+      padding: 4px 10px;
+      font-size: 13px;
+    }
+    .textNav  {
+     padding:0px 5px;
+    }
+    .ulset li{
+      padding: 0px;
+      margin: 0px;
+    }
+    .supprtnum div{
+      font-size: 12px !important;
+    }
+   
+  }
