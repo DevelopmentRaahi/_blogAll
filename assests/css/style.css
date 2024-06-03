@@ -568,3 +568,21 @@ footer,.footer-section{
   display: none;
   z-index: 100;
 }
+
+
+/* command line */
+
+.cmd_line_code{
+   background-color: #000000;
+   margin: 0.4rem 0;
+}
+.git-bash{
+   background-color: #2a2929;
+   color: #bbbbbb;
+   padding: 0.3rem .7rem;
+}
+.cmd_line_text{
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+}
