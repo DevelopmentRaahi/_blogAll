@@ -13,6 +13,8 @@ body{
 font-family: "Lato", sans-serif;
 font-size: 15px;
 }
+
+
 .lato-text{
   font-family: "Lato", sans-serif;
   font-weight: 600;
@@ -65,8 +67,10 @@ font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: initial;
+  color: rgb(79, 74, 74) !important;
+  font-size: 2rem;
 }
+
 
 .poppins-extrabold-italic {
   font-family: "Poppins", sans-serif;
