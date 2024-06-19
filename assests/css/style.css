@@ -638,6 +638,10 @@ footer,.footer-section{
   display: grid;
   animation: blink 1s infinite;
 }
+.whatsap_button:hover .float, .whatsap_button .bi:hover{
+animation-play-state: paused;
+opacity: 1;
+}
 .whatsap_button .float:hover {
   filter: grayscale(0);
 }
