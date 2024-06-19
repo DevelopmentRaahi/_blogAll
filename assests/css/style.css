@@ -2,17 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     margin: 0;
-    padding: 0;
-    font-size: 15px;
+    padding: 0;   
     box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+   font-family: "Poppins", sans-serif;
+}
+html{
+   font-size: 15px;
 }
 
-nav {
-  /* font-family: "Lato", sans-serif; */
-    /* font-family: "Poppins", sans-serif; */
-    font-weight: 300;    
-   }
+
 .navbar-nav a{
     font-size: 1rem;
     font-weight: 400;
@@ -92,7 +90,8 @@ nav {
 }
 footer {
     height: auto;
-    background-color: #2f4e7e;
+    /* background-color: #2f4e7e; */
+    background-color: #000000;
     /* background-image: linear-gradient(82deg, rgb(150, 93, 232) 0%, rgb(107, 89, 237) 100%); */
     padding: 1.2rem 0rem;
 }
