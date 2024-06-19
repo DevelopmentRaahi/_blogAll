@@ -5,15 +5,11 @@
 *{ 
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+  box-sizing: border-box;  
 }
 html{
   font-size: 14px;
 }
-
-
-
 
 .lato-text{
   font-family: "Lato", sans-serif;
@@ -320,9 +316,8 @@ display: none;
  border-bottom: 1px solid rgba(54, 53, 53, 0);
 }
 .main-bred {
-  position: relative;
-  top: 20%;
-  left: 15px;
+  
+  
   padding: 0.5rem 0rem;
   display: grid;
  justify-content: center;

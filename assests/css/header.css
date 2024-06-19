@@ -456,3 +456,10 @@ h6 {
   display: none;
 }
 }
+
+
+/* breadcrumbs */
+.breadcrumb{
+    background-color:#f2f2f2b8;
+    padding: 6px 0;
+  }
