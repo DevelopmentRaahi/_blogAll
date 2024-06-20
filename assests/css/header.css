@@ -272,6 +272,9 @@ h6 {
   }
 }
 
+  #deep_menu:hover  .toggle-dropdown{
+  transform: rotate(90deg) !important;
+}
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
