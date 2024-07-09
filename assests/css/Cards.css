@@ -433,7 +433,7 @@ display: none;
     justify-content: center;
   }
   .ptext p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   
 }
 .footer-section{
@@ -541,15 +541,24 @@ color: #1d1d1d;
  
 }
 .cardimg{
-  transition: all 0.3s linear !important;
+  transition: all 0.4s ;
 }
 
 .cardimg:hover{
   box-shadow: 4px 4px 10px rgba(38, 38, 38, 0.375);             
-  transform: translateY(-10px);
-  transform: scaleY(107%), scaleX(103%);
-  transition: all 0.3s ease-in !important;
+  transform: translateY(-7px) scale(102%);
+  transition: all 0.4s ;
 }
+
+ @media screen and (max-width: 600px) {
+    .cardimg:hover{
+      box-shadow: 4px 4px 10px rgba(38, 38, 38, 0.375);             
+      transform: translateY(0) scale(100%);     
+      transition: all 0.3s ;
+    }
+ }
+
+
 .navbtn{
   transition: all 0.5s;
 }
@@ -577,3 +586,7 @@ button{
 .footer_space ul p{
   font-size: 1rem;
 }
+
+
+/* card property with hover  */
+
