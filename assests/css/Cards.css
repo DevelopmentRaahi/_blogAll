@@ -180,8 +180,12 @@ margin-top: 1.2rem;
   color: white;
 }
 .card-body {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   color: #1d1d1d;
+  
+}
+.card-body .card-title{
+  padding: 10px 0;
 }
 
 .justify-text h2, h3 {
@@ -614,7 +618,8 @@ button{
   line-height: 1.5;
 }
 
-@media (min-width:975px) and (max-width:1120px) {
+
+@media (min-width:1025px) and (max-width:1120px) {
   .subscriber1 .sub-content h4 {
       font-size: 18px;
       font-weight: 500;
@@ -622,13 +627,21 @@ button{
   .list-group .list-group-item{
     font-size: 12px;
   }
-
+  
 }
 @media (min-width:975px) and (max-width:1025px) {
   .col-lg-9{
     width: 100%;
   }
   .col-lg-3{
-    width: 75%;
+    width: 98%;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
   }
 }
+ @media screen and (max-width:830px) {
+    .firstsix{
+    font-size: 13px;
+    font-weight: 450;
+  }
+ }
