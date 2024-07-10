@@ -167,7 +167,8 @@ margin-top: 1.2rem;
   padding: 0.5rem 1rem;
 }
 .firstsix{
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 450;
 }
 
 .list-group-flush li a{
@@ -180,6 +181,7 @@ margin-top: 1.2rem;
   color: white;
 }
 .card-body {
+  padding: 5px 3px;
   /* background-color: #ffffff; */
   color: #1d1d1d;
   
