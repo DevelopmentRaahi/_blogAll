@@ -146,17 +146,16 @@ background: linear-gradient(90deg, rgba(232,137,137,1) 0%, rgba(210,200,165,1) 3
   font-weight: 600;
 }
 .subscriber{
-  padding: 10px 3px;
+padding: 10px 3px;
 margin-top: 1rem;
 }
 .subscriber input{
 padding: 0.5rem 1.2rem;
-opacity: 0.7;
+opacity: 0.8;
 
 }
-.btn-main{
-margin-top: 1.2rem;
-}
+
+
 .sub-content h4 {
   background-color: #23488a;
   color: white;
@@ -466,14 +465,17 @@ div p {
 }
 }
 /* input */
-
+.but-side  input{
+  display: block;
+}
 .but-side{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;  
-  padding: 10px 0px;
-  
-}
+  padding: 10px 10px;
+  align-items: center;
+  }
+
 .line-bred li a:hover{
 color: rgb(31, 28, 28);
 }
