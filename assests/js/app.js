@@ -196,12 +196,6 @@ links.forEach((link) => {
 
 
 
-// function activeLink() {
-//   for (let link of links) {
-//     link.classList.remove("active");
-//     }
-// }
-
 
 
 
