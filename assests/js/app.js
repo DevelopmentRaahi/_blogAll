@@ -4,14 +4,14 @@ let socialIcons = document.querySelector(".whatsap_button");
 window.onscroll = function () {
   scrollFunction();
 };
+// prevent copy pasting of text
 const preventCopyPaste = (event) => {
-            event.preventDefault();
-            alert('Copying and pasting text is disabled on this website.');
-        };
+            event.preventDefault();            
+       };
 
-        document.addEventListener('copy', preventCopyPaste);
-        document.addEventListener('cut', preventCopyPaste);
-        document.addEventListener('paste', preventCopyPaste);
+document.addEventListener('copy', preventCopyPaste);
+document.addEventListener('cut', preventCopyPaste);
+document.addEventListener('paste', preventCopyPaste);
 
 
 function scrollFunction() {
