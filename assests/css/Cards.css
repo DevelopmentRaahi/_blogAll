@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;  
 }
+
 html{
   font-size: 14px;
 }
@@ -673,16 +674,7 @@ button{
   }
   
 }
-/* @media (min-width:975px) and (max-width:1025px) {
-  .col-lg-9{
-    width: 100%;
-  }
-  .col-lg-3{
-    width: 98%;
-    margin: 0 auto;
-    padding: 10px 0 20px 0;
-  }
-} */
+
  @media screen and (max-width:830px) {
     .firstsix{
     font-size: 13px;
