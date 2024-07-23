@@ -4,6 +4,15 @@ let socialIcons = document.querySelector(".whatsap_button");
 window.onscroll = function () {
   scrollFunction();
 };
+// prevent copy pasting of text
+const preventCopyPaste = (event) => {
+            event.preventDefault();            
+       };
+
+document.addEventListener('copy', preventCopyPaste);
+document.addEventListener('cut', preventCopyPaste);
+document.addEventListener('paste', preventCopyPaste);
+
 
 function scrollFunction() {
   if (
