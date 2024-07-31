@@ -438,6 +438,9 @@ display: none;
     flex-wrap: wrap;
     justify-content: center;
   }
+  .bg-logo{
+    width: 42%;
+  }
   .ptext p {
   font-size: 1rem;
   
