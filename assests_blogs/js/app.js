@@ -182,33 +182,3 @@ function backToTop() {
   document.addEventListener('scroll', toggleScrollTop);
 
 })();
-
-
-
-let links = document.querySelectorAll('.p_links');
-var currentValue = 1;
-
-links.forEach((link) => {
-  link.addEventListener("click", function(event) {    
-    // event.preventDefault();   
-    links.forEach((lnk) => lnk.classList.remove("active_clicked"));
-
-    link.classList.add("active_clicked");  
-
-    currentValue = link.textContent;
-    // console.log("Current value:", currentValue);
-
-  })
-  
-})
-
-
-
-
-
-
-
-
-
-
-
