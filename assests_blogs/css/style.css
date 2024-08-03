@@ -685,3 +685,57 @@ opacity: 1;
   color: var(--primary-color);
   font-family: "Roboto", sans-serif;
 }
+
+/* when pages increse to 5+ then use newpagination in js folder and enable the in the index file,
+then connect new pagination js then all are working */
+/*  
+.pagination-container {
+  padding: 0;
+	list-style: none;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 7px;
+	
+}
+.pagination-container li.prev, 
+.pagination-container li.next 
+{
+	background-color: #4a4a4acb;
+	padding:  6px 10px;
+	color: #fff;
+	border-radius:  5px;
+	transition: all 0.8s;
+	cursor: pointer;
+}
+.pagination-container li.prev:active, 
+.pagination-container li.next:active { 
+	background-color: #232323;
+	transition: all 0.7s;
+	cursor: pointer;
+}
+.pagination-container li.prev:hover, 
+.pagination-container li.next:hover { 
+	background-color: #232323;	
+	cursor: pointer;
+}
+
+.activeli{	
+	background-color:  #165aa3;
+	color: #fff;
+}
+.pagination-container li.num{	
+	padding:  7.5px 15px;
+	border-radius: 50%;
+	transition: all 0.4s;
+}
+.pagination-container li{
+	font-size: 15px;
+	font-weight: 500;
+}
+.pagination-container li.num:hover{
+	background-color: #165aa3;
+	color: #fff;
+	transition: all 0.5s;
+	cursor: pointer;
+} */
