@@ -1,13 +1,137 @@
+:root{
+  --primary-color: #181818;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     margin: 0;
     padding: 0;   
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+   font-family: "Poppins", sans-serif;
+}
+html{
+   font-size: 15px;
 }
 
 
+.navbar-nav a{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+
+.navbtn{
+    background-color: #fc5a15;
+    padding: 4px 17px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    
+}
+
+.navbtn:hover{
+    background-color: black;
+    color: #fff;
+}
+.logo-vertical{
+    display: grid;
+}
+    
+    #navbg-h {
+        
+        height: 70px;
+        background-image: linear-gradient(82deg, rgb(150, 93, 232) 0%, rgb(107, 89, 237) 100%);
+    }
+    
+    
+    #warningbtn {
+        padding: 0rem 2rem;
+        font-size: 0.8rem;
+    }
+    
+    .inputset input {
+        font-size: 0.8rem;
+    }
+    
+    .dropdown-menu li a {
+        font-size: 0.8rem;
+    }
+    
+    .navbar-brand {
+        color: rgb(255, 191, 0);
+}
+
+.bg-nav {
+    background-color: #2f4e7e;
+}
+
+.bg_input {
+    background-color: #1e364e;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.999);
+}
+
+.bg-color {
+    background-color: antiquewhite;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+
+}
+.call_link i{
+  font-size: 1.3rem;
+}
+.call_link a{
+ text-decoration: none;
+}
+
+.image-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    height: auto;
+    /* background-color: #2f4e7e; */
+    background-color: #000000;
+    /* background-image: linear-gradient(82deg, rgb(150, 93, 232) 0%, rgb(107, 89, 237) 100%); */
+    padding: 1.2rem 0rem;
+}
+
+footer ul li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+footer ul>p {
+    font-size: 1.3rem;
+    color: rgb(255, 191, 0);
+    font-weight: 600;
+}
+@media  (min-width: 600px) and (max-width:900px){
+  footer ul>p {
+    font-size: 1rem;
+    
+}
+}
+
+@media  (max-width: 600px) {
+  footer ul>p {
+    font-size: 0.8rem;
+}
+
+.footertext{
+  font-size: 1.2rem;
+}
+.footertext > h4{ 
+  font-size: 0.9rem;
+}
+}
 
 #buttonbg {
     background-color: rgb(150, 93, 232);
@@ -500,12 +624,10 @@ footer,.footer-section{
   opacity: 0.9;
   transition: all 0.5s;
   z-index: 300;
-  position: relative;
 }
 .whatsap_button:hover {
   opacity: 1;
   transition: all 0.5s;
- 
 }
 .whatsap_button .float {
   position: fixed;
@@ -522,6 +644,10 @@ footer,.footer-section{
   z-index: 300;
   display: grid;
   animation: blink 1s infinite;
+}
+.whatsap_button:hover .float, .whatsap_button .bi:hover{
+animation-play-state: paused;
+opacity: 1;
 }
 .whatsap_button .float:hover {
   filter: grayscale(0);
@@ -551,222 +677,65 @@ footer,.footer-section{
     opacity: 0.5;
   }
 }
-.whatsap_button:hover a{
-  opacity: 1;
-  animation-play-state: paused;
+
+.pros-const{
+  font-size: 20px;
+  padding: 5px 0;
+  /* color: #3e3e3e; */
+  color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
 }
 
-
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-
-
-#services{
-  margin: 0rem 0;
+/* when pages increse to 5+ then use newpagination in js folder and enable the in the index file,
+then connect new pagination js then all are working */
+/*  
+.pagination-container {
+  padding: 0;
+	list-style: none;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 7px;
+	
 }
-#services .section-title{
-  padding: 0rem 0 3rem 0;
-  display: grid;
-  justify-content: center;
-  
+.pagination-container li.prev, 
+.pagination-container li.next 
+{
+	background-color: #4a4a4acb;
+	padding:  6px 10px;
+	color: #fff;
+	border-radius:  5px;
+	transition: all 0.8s;
+	cursor: pointer;
 }
-.section-title h2 {
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 4px 20px;
-    margin: 0;
-    text-align: center;
-    color: #4154f1;
-    /* background-color: #edecfc; */
-    text-transform: uppercase;
-    border-radius: 50px;
-    
+.pagination-container li.prev:active, 
+.pagination-container li.next:active { 
+	background-color: #232323;
+	transition: all 0.7s;
+	cursor: pointer;
 }
-.section-title p {
-    color: #012970;
-    margin: 10px 0 0 0;
-    font-size: 32px;
-    font-weight: 600;
-    font-family: var(--heading-font);
+.pagination-container li.prev:hover, 
+.pagination-container li.next:hover { 
+	background-color: #232323;	
+	cursor: pointer;
 }
 
-
-.services .service-item {
-  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.066);
-  height: 100%;
-  padding: 60px 30px;
-  text-align: center;
-  transition: 0.3s;
-  border-radius: 5px;
+.activeli{	
+	background-color:  #165aa3;
+	color: #fff;
 }
-.service-item a{
-  text-decoration: none;
+.pagination-container li.num{	
+	padding:  7.5px 15px;
+	border-radius: 50%;
+	transition: all 0.4s;
 }
-
-.services .service-item .icon {
-  font-size: 36px;
-  padding: 20px 20px;
-  border-radius: 4px;
-  position: relative;
-  margin-bottom: 25px;
-  display: inline-block;
-  line-height: 0;
-  transition: 0.3s;
+.pagination-container li{
+	font-size: 15px;
+	font-weight: 500;
 }
-
-.services .service-item h3 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.services .service-item .read-more {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 8px 20px;
-}
-
-.services .service-item .read-more i {
-  line-height: 0;
-  margin-left: 5px;
-  font-size: 18px;
-}
-
-.services .service-item.item-cyan {
-  border-bottom: 3px solid #0dcaf0;
-}
-
-.services .service-item.item-cyan .icon {
-  color: #0dcaf0;
-  background: rgba(13, 202, 240, 0.1);
-}
-
-.services .service-item.item-cyan .read-more {
-  color: #0dcaf0;
-}
-
-.services .service-item.item-cyan:hover {
-  background: #0dcaf0;
-}
-
-.services .service-item.item-orange {
-  border-bottom: 3px solid #fd7e14;
-}
-
-.services .service-item.item-orange .icon {
-  color: #fd7e14;
-  background: rgba(253, 126, 20, 0.1);
-}
-
-.services .service-item.item-orange .read-more {
-  color: #fd7e14;
-}
-
-.services .service-item.item-orange:hover {
-  background: #fd7e14;
-}
-
-.services .service-item.item-teal {
-  border-bottom: 3px solid #20c997;
-}
-
-.services .service-item.item-teal .icon {
-  color: #20c997;
-  background: rgba(32, 201, 151, 0.1);
-}
-
-.services .service-item.item-teal .read-more {
-  color: #20c997;
-}
-
-.services .service-item.item-teal:hover {
-  background: #20c997;
-}
-
-.services .service-item.item-red {
-  border-bottom: 3px solid #df1529;
-}
-
-.services .service-item.item-red .icon {
-  color: #df1529;
-  background: rgba(223, 21, 4, 0.1);
-}
-
-.services .service-item.item-red .read-more {
-  color: #df1529;
-}
-
-.services .service-item.item-red:hover {
-  background: #df1529;
-}
-
-.services .service-item.item-indigo {
-  border-bottom: 3px solid #6610f2;
-}
-
-.services .service-item.item-indigo .icon {
-  color: #6610f2;
-  background: rgba(102, 16, 242, 0.1);
-}
-
-.services .service-item.item-indigo .read-more {
-  color: #6610f2;
-}
-
-.services .service-item.item-indigo:hover {
-  background: #6610f2;
-}
-
-.services .service-item.item-pink {
-  border-bottom: 3px solid #f3268c;
-}
-
-.services .service-item.item-pink .icon {
-  color: #f3268c;
-  background: rgba(243, 38, 140, 0.1);
-}
-
-.services .service-item.item-pink .read-more {
-  color: #f3268c;
-}
-
-.services .service-item.item-pink:hover {
-  background: #f3268c;
-}
-
-.services .service-item:hover h3,
-.services .service-item:hover p,
-.services .service-item:hover .read-more {
-  color: #fff;
-}
-
-.services .service-item:hover .icon {
-  background: #fff;
-}
-
-
-#services{
-  padding: 2rem 0;
-}
-@media screen and (max-width: 876px) {
-  .section-title p{
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .services .service-item h3{
-    font-weight: 600;
-    font-size: 20px;
-  }
-}
-
-
-
-
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+.pagination-container li.num:hover{
+	background-color: #165aa3;
+	color: #fff;
+	transition: all 0.5s;
+	cursor: pointer;
+} */
