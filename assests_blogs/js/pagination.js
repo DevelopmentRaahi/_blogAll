@@ -42,6 +42,7 @@ const cardsPerPage = 9; // Number of cards to show per page
         pageLink.addEventListener('click', () => {
           currentPage = page;
           displayPage(currentPage);
+          backToTop();
           updatePagination();
         });
         pageLinksContainer.appendChild(pageLink);
@@ -55,15 +56,20 @@ const cardsPerPage = 9; // Number of cards to show per page
     prevButton.addEventListener('click', () => {
       if (currentPage > 1) {
         currentPage--;
+         backToTop();
         displayPage(currentPage);
         updatePagination();
       }
     });
+    function backToTop(){
+      document.documentElement.scrollTop = 140;
+    }
 
     // Event listener for "Next" button
     nextButton.addEventListener('click', () => {
       if (currentPage < totalPages) {
         currentPage++;
+        backToTop();
         displayPage(currentPage);
         updatePagination();
       }
