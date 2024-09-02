@@ -3,7 +3,7 @@ var carrButton = document.querySelectorAll('[href="https://domgys.in/careers.htm
 console.log(carrButton);
 if (carrButton) {
   for (const el of carrButton) {
-  el.textContent = "Careers";
+  el.textContent = "Career";
 }
 }
 let mybutton = document.getElementById("btn-back-to-top");
