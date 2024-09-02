@@ -1,5 +1,11 @@
 
-
+var carrButton = document.querySelectorAll('[href="https://domgys.in/careers.html"]')
+console.log(carrButton);
+if (carrButton) {
+  for (const el of carrButton) {
+  el.textContent = "Careers";
+}
+}
 let mybutton = document.getElementById("btn-back-to-top");
 let socialIcons = document.querySelector(".whatsap_button");
 // When the user scrolls down 20px from the top of the document, show the button
@@ -184,33 +190,3 @@ function backToTop() {
   document.addEventListener('scroll', toggleScrollTop);
 
 })();
-
-
-
-let links = document.querySelectorAll('.p_links');
-var currentValue = 1;
-
-links.forEach((link) => {
-  link.addEventListener("click", function(event) {    
-    // event.preventDefault();   
-    links.forEach((lnk) => lnk.classList.remove("active_clicked"));
-
-    link.classList.add("active_clicked");  
-
-    currentValue = link.textContent;
-    // console.log("Current value:", currentValue);
-
-  })
-  
-})
-
-
-
-
-
-
-
-
-
-
-
