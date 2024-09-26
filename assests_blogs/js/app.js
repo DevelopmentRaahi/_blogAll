@@ -1,6 +1,24 @@
+var allCards = Array.from(document.querySelectorAll('.s-card'));
+var allText = Array.from(document.querySelectorAll('.s-card a h3'));
+var searchInput = document.getElementById('search-input');
+
+searchInput.addEventListener('input', (e) => {
+  let searchValue = e.target.value.toLowerCase();
+
+  allCards.forEach((card, index) => {
+    let cardText = allText[index].innerText.toLowerCase();
+    if (cardText.startsWith(searchValue)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+
+
 
 var carrButton = document.querySelectorAll('[href="https://domgys.in/careers.html"]')
-console.log(carrButton);
+// console.log(carrButton);
 if (carrButton) {
   for (const el of carrButton) {
   el.textContent = "Career";
