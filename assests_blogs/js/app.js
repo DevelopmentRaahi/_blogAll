@@ -15,8 +15,6 @@ searchInput.addEventListener('input', (e) => {
   });
 });
 
-
-
 var carrButton = document.querySelectorAll('[href="https://domgys.in/careers.html"]')
 // console.log(carrButton);
 if (carrButton) {
