@@ -7,7 +7,7 @@ searchInput.addEventListener('input', (e) => {
 
   allCards.forEach((card, index) => {
     let cardText = allText[index].innerText.toLowerCase();
-    if (cardText.startsWith(searchValue)) {
+    if (cardText.includes(searchValue)) {
       card.style.display = 'block';
     } else {
       card.style.display = 'none';
