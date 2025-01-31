@@ -770,17 +770,17 @@ footer,.footer-section{
   font-family:  "poppins", sans-serif;
 }
 .call-to__action p{ 
-   font-size: 1.5rem; 
+  font-size: 1.5rem; 
   margin-bottom: 3rem ;
- width: 75%;
- position: relative;
- left: 50%;
- transform: translateX(-50%);
+  width: 75%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .call-to__action a{
   text-decoration: none;
-  background-color: #fcfcfc;
-  border: 1px solid #3476f0;
+  background-color: #fdcb6e;
+  border: 1px solid #39393a;
   color: #353535;
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
@@ -791,6 +791,7 @@ footer,.footer-section{
 }
 .call-to__action a:hover{
   background-color:#3476f0;
+  border-color:#3476f0;
   color: #ffffff;
 }
 

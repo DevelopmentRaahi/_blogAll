@@ -2,18 +2,19 @@ var allCards = Array.from(document.querySelectorAll('.s-card'));
 var allText = Array.from(document.querySelectorAll('.s-card a h3'));
 var searchInput = document.getElementById('search-input');
 
-searchInput.addEventListener('input', (e) => {
-  let searchValue = e.target.value.toLowerCase();
+searchInput &&
+  searchInput.addEventListener("input", (e) => {
+    let searchValue = e.target.value.toLowerCase();
 
-  allCards.forEach((card, index) => {
-    let cardText = allText[index].innerText.toLowerCase();
-    if (cardText.includes(searchValue)) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
+    allCards.forEach((card, index) => {
+      let cardText = allText[index].innerText.toLowerCase();
+      if (cardText.includes(searchValue)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
-});
 
 var carrButton = document.querySelectorAll('[href="https://domgys.in/careers.html"]')
 // console.log(carrButton);
