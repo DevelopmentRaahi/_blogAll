@@ -2,4 +2,5 @@ blogs
 readme.txt
 *.zip
 *.psd
-*_oldFormat
+
+server.md
