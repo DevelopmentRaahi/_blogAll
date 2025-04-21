@@ -9,5 +9,5 @@ one file upload here
 
 1) Managed VPS Hosting in India – Safe, High-Performance, and Flexible- ye blog m img lgani h
 2)  How Do I Select the Right Dedicated Server in India
-3) .Bank.in & .Fin.in – Secure Domains for Indian Finance | Pre-Order
+3) Bank.in & .Fin.in – Secure Domains for Indian Finance | Pre-Order
 4) How to Secure Your Brand with a .Insurance Domain Name
